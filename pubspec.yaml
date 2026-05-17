@@ -1,0 +1,43 @@
+name: mobile_grobownik
+description: "A new Flutter project."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  auto_route: ^11.1.0
+  freezed: ^3.2.5
+  hooks_riverpod: ^3.3.1
+  flutter_hooks: ^0.21.3+1
+  riverpod_annotation: ^4.0.2
+  flutter_svg: ^2.3.0
+  dio: ^5.9.2
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  build_runner: ^2.15.0
+  riverpod_generator: ^4.0.3
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+
+  integrations:
+    image: true
+    flutter_svg: true
+
+  colors:
+    inputs:
+      - assets/color/colors.xml
+
+flutter:
+  uses-material-design: true
